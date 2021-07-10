@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<title> PC Games Payment </title>
+<style>
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #fc7f03;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #fc8a17;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.text{
+  text-align: center;
+  color: #ff8c00;
+}
+
+.home_link {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+</style>
+<body bgcolor="#000000">
+
+<h1 class="text"> Purchase PC Game </h1>
+<h3 class="text"> If you want to buy a game, please fill below form and select payment method.</h3>
+
+<div>
+  <form action="pc-pay-response.html">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" placeholder="Your name..">
+
+    <label for="phone">Phone Number</label>
+    <input type="text" id="phone" name="phone" placeholder="Your Phone Number ..">
+
+    <label for="phone">Mail Address</label>
+    <input type="text" id="mail" name="mail" placeholder="Your Mail Address ..">
+
+    <input type="radio" id="aya" name="aya" value="AYA">
+    <label for="text">AYA Mobile Banking</label>
+    <input type="text" id="aya-acc" name="aya-acc" placeholder="Enter your banking account">
+
+    <input type="radio" id="kbz" name="kbz" value="KBZ">
+    <label for="kbz-acc">KBZ Mobile Banking</label><br>
+    <input type="text" id="kbz-acc" name="kbz-acc" placeholder="Enter your banking account">
+
+    <input type="radio" id="kpay" name="kpay" value="KBZ Pay">
+    <label for="kpay">KBZ Pay</label>
+    <input type="text" id="kpay" name="kpay" placeholder="Enter your KBZ Pay account">
+
+    <input type="radio" id="wave" name="wave" value="Wave">
+    <label for="javascript">Wave Money</label>
+    <input type="text" id="wave" name="wave" placeholder="Enter your Wave account">
+
+    <input type="radio" id="cb" name="cb" value="CB Mobile">
+    <label for="javascript">CB Mobile Banking</label>
+    <input type="text" id="cb" name="cb" placeholder="Enter your banking account">
+
+    <input type="radio" id="cb-pay" name="cb-pay" value="CB Pay">
+    <label for="javascript">CB Pay</label>
+    <input type="text" id="cb-pay" name="cb-pay" placeholder="Enter your CBpay account">
+  
+    <input type="submit" value="Submit">
+    <a href="pcgame.html" class="home_link">Back to PC Games </a>
+  </form>
+</div>
+
+</body>
+</html>
