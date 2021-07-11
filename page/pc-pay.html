@@ -23,19 +23,17 @@ input[type=text], select {
   color: #ff8c00;
 }
 
-.container { 
-  height: 200px;
-  position: relative;
-  border: 3px solid green; 
-}
-
-.center {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
 }
 
 </style>
@@ -79,12 +77,11 @@ input[type=text], select {
     <label for="javascript">CB Pay</label>
     <input type="text" id="cb-pay" name="cb-pay" placeholder="Enter your CBpay account">
   
-    <div class="container">
-    <a href="pc-pay-response.html" class="center"> Submit </a>
-    </div>
-    <div class="container">
-    <a href="pcgame.html" class="center">Back to PC Games </a>
-    </div>
+    
+    <a href="pc-pay-response.html" class="button"> Submit </a> <br>
+   
+    <a href="pcgame.html" class="button">Back to PC Games </a>
+   
   </form>
 </div>
 
