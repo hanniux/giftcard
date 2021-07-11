@@ -12,21 +12,6 @@ input[type=text], select {
   box-sizing: border-box;
 }
 
-input[type=submit] {
-  width: 50%;
-  background-color: #fc7f03;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-input[type=submit]:hover {
-  background-color: #fc8a17;
-}
-
 div {
   border-radius: 5px;
   background-color: #f2f2f2;
@@ -58,7 +43,7 @@ div {
 <h3 class="text"> If you want to buy a game, please fill below form and select payment method.</h3>
 
 <div>
-  <form action="pc-pay-response.html">
+  <form>
     <label for="name">Name</label>
     <input type="text" id="name" name="name" placeholder="Your name..">
 
@@ -93,6 +78,7 @@ div {
     <input type="text" id="cb-pay" name="cb-pay" placeholder="Enter your CBpay account">
   
     <input type="submit" value="Submit">
+    <a href="pc-pay-response.html" class="home_link"> Submit </a>
     <a href="pcgame.html" class="home_link">Back to PC Games </a>
   </form>
 </div>
