@@ -12,7 +12,7 @@ input[type=text], select {
   box-sizing: border-box;
 }
 
-div {
+.div1 {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
@@ -23,18 +23,19 @@ div {
   color: #ff8c00;
 }
 
-.home_link {
-  background-color: #4CAF50; /* Green */
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  align : center;
+.container { 
+  height: 200px;
+  position: relative;
+  border: 3px solid green; 
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 </style>
@@ -43,7 +44,7 @@ div {
 <h1 class="text"> Purchase PC Game </h1>
 <h3 class="text"> If you want to buy a game, please fill below form and select payment method.</h3>
 
-<div>
+<div class="div1">
   <form>
     <label for="name">Name</label>
     <input type="text" id="name" name="name" placeholder="Your name..">
@@ -78,9 +79,10 @@ div {
     <label for="javascript">CB Pay</label>
     <input type="text" id="cb-pay" name="cb-pay" placeholder="Enter your CBpay account">
   
-    
-    <a href="pc-pay-response.html" class="home_link"> Submit </a> <br>
-    <a href="pcgame.html" class="home_link">Back to PC Games </a>
+    <div class="container">
+    <a href="pc-pay-response.html" class="center"> Submit </a> <br>
+    <a href="pcgame.html" class="center">Back to PC Games </a>
+    </div>
   </form>
 </div>
 
