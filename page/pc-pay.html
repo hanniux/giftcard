@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <title> PC Games Payment </title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-
 input[type=text], select {
   width: 100%;
   padding: 12px 20px;
@@ -13,7 +13,22 @@ input[type=text], select {
   box-sizing: border-box;
 }
 
-.div1 {
+input[type=submit] {
+  width: 100%;
+  background-color: #fc7f03;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #fc8a17;
+}
+
+div {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
@@ -24,8 +39,8 @@ input[type=text], select {
   color: #ff8c00;
 }
 
-.button {
-  background-color: #4CAF50;
+.home_link {
+  background-color: #4CAF50; /* Green */
   border: none;
   color: white;
   padding: 15px 32px;
@@ -36,7 +51,6 @@ input[type=text], select {
   margin: 4px 2px;
   cursor: pointer;
 }
- 
 
 </style>
 <body bgcolor="#000000">
@@ -44,8 +58,8 @@ input[type=text], select {
 <h1 class="text"> Purchase PC Game </h1>
 <h3 class="text"> If you want to buy a game, please fill below form and select payment method.</h3>
 
-<div class="div1">
-  <form>
+<div>
+  <form action="pc-pay-response.html">
     <label for="name">Name</label>
     <input type="text" id="name" name="name" placeholder="Your name..">
 
@@ -79,11 +93,9 @@ input[type=text], select {
     <label for="javascript">CB Pay</label>
     <input type="text" id="cb-pay" name="cb-pay" placeholder="Enter your CBpay account">
   
+    <input type="submit" value="Submit">
+    <button> <a href="pcgame.html"> Back to PC Games</button>
     
-    <a href="pc-pay-response.html" class="button"> Submit </a> <br>
-   
-    <a href="pcgame.html" class="button">Back to PC Games </a>
-   
   </form>
 </div>
 
