@@ -90,8 +90,7 @@ h1{
 .img2{
   float: left;
   text-align: center;
-  padding: 5px;
-  margin-left: 40px;
+  margin: 5.5%;
  }
 
 .img_radius{
@@ -111,7 +110,7 @@ p{
 
 .game_name{
   color: white;
-  font-size: 30px;
+  font-size: 20px;
   line-height: 30px;
 }
 
