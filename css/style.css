@@ -115,14 +115,19 @@ p{
 }
 
 
-
-a:visited{
-  color: #00ff1a;
-  text-decoration: none;
+/* visited link */
+a:visited {
+  color: white;
 }
 
-a:hover{
-  color:red;
+/* mouse over link */
+a:hover {
+  color: yellow;
+}
+
+/* selected link */
+a:active {
+  color: blue;
 }
 
 
