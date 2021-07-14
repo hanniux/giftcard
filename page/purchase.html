@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Purchase</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Logo & other resources-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="../css/style.css">
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+</head>
+<body>
+
+<div class="topnav" id="myTopnav">
+  <a href="#home" ><span class="span1"><b >Giftcard</b></span>
+  <span>Shop</span></a>
+  <a href="../index.html">Home</a>
+  <a href="price.html">Price</a>
+  <a href="purchase.html">Purchase</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+  <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<img class="banner" src="../image/homebanner.png">
+
+</div>
+<div class="container">
+  <form action="pay.html">
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">Select Card</label>
+      </div>
+      <div class="col-75">
+        <select>
+          <option value="0">Select Card:</option>
+          <option value="1">STEAM</option>
+          <option value="2">Google</option>
+          <option value="3">iTune</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">Select Price:</label>
+      </div>
+      <div class="col-75">
+        <select id="country" name="country">
+          <option value="0">Select Price</option>
+          <option value="1">$10</option>
+          <option value="2">$20</option>
+          <option value="3">$50</option>
+          <option value="4">$80</option>
+          <option value="5">$100</option>
+          <option value="6">$150</option>
+          <option value="7">$180</option>
+          <option value="8">$200</option>
+          <option value="9">$300</option>
+          <option value="10">$500</option>
+        </select>
+      </div>
+    <div class="row">
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+</div>
+</div>
+
+<div class="footer">
+  <div class="row">
+  <div class="column">
+    <h2>About of Me</h2>
+    <p>Giftcard shop is an online shop offering a wide selection of premium handpicked gifts such as unique experiences, beautiful flowers, your favourite gift cards, luxurious hampers and many other thoughtful gifts perfect for any occasion. All gifts comes with your own personalised greeting card and free shipping.
+</p>
+  </div>
+  
+  <div class="column">
+    <h2>Contact Us</h2>
+    <p>For Support <br> support@giftcardshop.com <br><br>
+      For corporate sales enquiry, you may rite in to <br> coporate@giftcardshop.com <br><br>
+      Phone Number <br>
+      (+95)123456789<br>
+      (+95)123789456
+
+</p>
+  </div>
+  
+  <div class="column">
+    <h2>Discover</h2>
+    <a href="#" class="fa fa-facebook"></a>
+    <a href="#" class="fa fa-twitter"></a>
+    <a href="#" class="fa fa-google"></a>
+    <a href="#" class="fa fa-linkedin"></a>
+    <a href="#" class="fa fa-youtube"></a>
+    <a href="#" class="fa fa-instagram"></a>
+    <a href="#" class="fa fa-pinterest"></a>
+    <a href="#" class="fa fa-snapchat-ghost"></a>
+    <a href="#" class="fa fa-skype"></a>
+    <br>
+    <h2>Office Location</h2>
+    <p> Sule Square Mall <br> 4th Floor, Room (402),<br> Yangon, Myanmar. 
+  </div>
+</div>  
+</body>
+</html>
