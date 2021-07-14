@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<title> PC Games Payment </title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.btn{
+  background: #3CBC8D;
+  color: #fff;
+  width: 100px;
+  height: 50px;
+  border: 1px solid #eee;
+  border-radius: 35px;
+  margin-left: 5px;
+  box-shadow: 5px 5px 5px #eee;
+  text-shadow:none;
+}
+
+.btn:hover {
+  background: #4df7a2;
+  color: #fff;
+  border: 1px solid #eee;
+  box-shadow: 5px 5px 5px #eee;
+  text-shadow:none;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  font-size: 20px;
+}
+
+.text{
+  text-align: center;
+  color: #04bf52;
+}
+
+.text-btn{
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+}
+/* The container */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 20px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+
+</style>
+<body bgcolor="#000000">
+
+<h1 class="text">Purchase Card</h1>
+<h3 class="text"> If you want to buy a Giftcard, please fill below form and select payment method.</h3>
+
+<div>
+
+<label for="name">Name</label>
+  <input type="text" id="name" name="name" placeholder="Your name..">
+
+<label for="phone">Phone Number</label>
+  <input type="text" id="phone" name="phone" placeholder="Your Phone Number ..">
+
+<label for="phone">Mail Address</label>
+  <input type="text" id="mail" name="mail" placeholder="Your Mail Address ..">
+
+<h3>Select Payment Method</h3>
+
+<label class="container">AYA Mobile Banking
+  <input type="radio" checked="checked" name="radio">
+  <span class="checkmark"></span>
+</label>
+  <input type="text" id="name" name="aya" placeholder="Enter AYA Bank Account">
+<label class="container">KBZ Mobile Banking
+  <input type="radio" name="radio">
+  <span class="checkmark"></span>
+</label>
+  <input type="text" id="name" name="kbz" placeholder="Enter KBZ Bank Account">
+<label class="container">Wave Money
+  <input type="radio" name="radio">
+  <span class="checkmark"></span>
+</label>
+<input type="text" id="name" name="wave" placeholder="Enter Wave Account">
+<label class="container">KBZ Pay
+  <input type="radio" name="radio">
+  <span class="checkmark"></span>
+</label>
+<input type="text" id="name" name="kpay" placeholder="Enter KBZ Pay Account">
+<button class="btn"> <a href="pay-response.html" class="text-btn">Submit</button><button class="btn"> <a href="../index.html" class="text-btn">Home</button>
+</div>
+</body>
+</html>
