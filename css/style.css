@@ -263,3 +263,31 @@ input[type=submit]:hover {
     margin-top: 0;
   }
 }
+
+.btn{
+  background: #3CBC8D;
+  color: #fff;
+  width: 150px;
+  height: 60px;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  margin-top: 30px;
+  box-shadow: 5px 5px 5px #eee;
+  text-shadow:none;
+}
+
+.btn:hover {
+  background: #4df7a2;
+  color: #fff;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px #eee;
+  text-shadow:none;
+}
+
+.text-btn{
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+}
