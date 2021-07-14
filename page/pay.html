@@ -14,18 +14,45 @@ input[type=text], select {
 }
 
 input[type=submit] {
-  width: 100%;
-  background-color: #04AA6D;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
+  background: #3CBC8D;
+  color: #fff;
+  width: 150px;
+  height: 80px;
+  border: 1px solid #eee;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px #eee;
+  font-size: 15px;
+  text-shadow:none;
 }
 
 input[type=submit]:hover {
-  background-color: #04bf52;
+  background: #4df7a2;
+  color: #fff;
+  border: 1px solid #eee;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px #eee;
+  text-shadow:none;
+}
+
+.btn{
+  background: #3CBC8D;
+  color: #fff;
+  width: 150px;
+  height: 80px;
+  border: 1px solid #eee;
+  border-radius: 20px;
+  margin-left: 5px;
+  box-shadow: 5px 5px 5px #eee;
+  text-shadow:none;
+}
+
+.btn:hover {
+  background: #4df7a2;
+  color: #fff;
+  border: 1px solid #eee;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px #eee;
+  text-shadow:none;
 }
 
 div {
@@ -39,17 +66,11 @@ div {
   color: #04bf52;
 }
 
-.home_link {
-  background-color: #04bf52; /* Green */
-  border: none;
-  color: white;
-  padding: 15px 32px;
+.text-btn{
   text-align: center;
+  color: white;
   text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
+  font-size: 15px;
 }
 
 </style>
@@ -93,8 +114,7 @@ div {
     <label for="javascript">CB Pay</label>
     <input type="text" id="cb-pay" name="cb-pay" placeholder="Enter your CBpay account">
   
-    <input type="submit" value="Submit">
-    <button> <a href="../index.html"> Back to Home</button>
+    <input type="submit" value="Submit"><button class="btn"> <a href="../index.html" class="text-btn"> Back to Home</button>
     
   </form>
 </div>
