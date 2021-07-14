@@ -13,34 +13,13 @@ input[type=text], select {
   box-sizing: border-box;
 }
 
-input[type=submit] {
-  background: #3CBC8D;
-  color: #fff;
-  width: 150px;
-  height: 80px;
-  border: 1px solid #eee;
-  border-radius: 20px;
-  box-shadow: 5px 5px 5px #eee;
-  font-size: 15px;
-  text-shadow:none;
-}
-
-input[type=submit]:hover {
-  background: #4df7a2;
-  color: #fff;
-  border: 1px solid #eee;
-  border-radius: 20px;
-  box-shadow: 5px 5px 5px #eee;
-  text-shadow:none;
-}
-
 .btn{
   background: #3CBC8D;
   color: #fff;
   width: 150px;
-  height: 80px;
+  height: 60px;
   border: 1px solid #eee;
-  border-radius: 20px;
+  border-radius: 35px;
   margin-left: 5px;
   box-shadow: 5px 5px 5px #eee;
   text-shadow:none;
@@ -50,7 +29,7 @@ input[type=submit]:hover {
   background: #4df7a2;
   color: #fff;
   border: 1px solid #eee;
-  border-radius: 10px;
+  border-radius: 35px;
   box-shadow: 5px 5px 5px #eee;
   text-shadow:none;
 }
@@ -59,6 +38,7 @@ div {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
+  font-size: 20px;
 }
 
 .text{
@@ -72,6 +52,68 @@ div {
   text-decoration: none;
   font-size: 15px;
 }
+/* The container */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 20px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
 
 </style>
 <body bgcolor="#000000">
@@ -80,44 +122,39 @@ div {
 <h3 class="text"> If you want to buy a Giftcard, please fill below form and select payment method.</h3>
 
 <div>
-  <form action="pc-pay-response.html">
-    <label for="name">Name</label>
-    <input type="text" id="name" name="name" placeholder="Your name..">
 
-    <label for="phone">Phone Number</label>
-    <input type="text" id="phone" name="phone" placeholder="Your Phone Number ..">
+<label for="name">Name</label>
+  <input type="text" id="name" name="name" placeholder="Your name..">
 
-    <label for="phone">Mail Address</label>
-    <input type="text" id="mail" name="mail" placeholder="Your Mail Address ..">
+<label for="phone">Phone Number</label>
+  <input type="text" id="phone" name="phone" placeholder="Your Phone Number ..">
 
-    <input type="radio" id="aya" name="aya" value="AYA">
-    <label for="text">AYA Mobile Banking</label>
-    <input type="text" id="aya-acc" name="aya-acc" placeholder="Enter your banking account">
+<label for="phone">Mail Address</label>
+  <input type="text" id="mail" name="mail" placeholder="Your Mail Address ..">
 
-    <input type="radio" id="kbz" name="kbz" value="KBZ">
-    <label for="kbz-acc">KBZ Mobile Banking</label><br>
-    <input type="text" id="kbz-acc" name="kbz-acc" placeholder="Enter your banking account">
+<h3>Select Payment Method</h3>
 
-    <input type="radio" id="kpay" name="kpay" value="KBZ Pay">
-    <label for="kpay">KBZ Pay</label>
-    <input type="text" id="kpay" name="kpay" placeholder="Enter your KBZ Pay account">
-
-    <input type="radio" id="wave" name="wave" value="Wave">
-    <label for="javascript">Wave Money</label>
-    <input type="text" id="wave" name="wave" placeholder="Enter your Wave account">
-
-    <input type="radio" id="cb" name="cb" value="CB Mobile">
-    <label for="javascript">CB Mobile Banking</label>
-    <input type="text" id="cb" name="cb" placeholder="Enter your banking account">
-
-    <input type="radio" id="cb-pay" name="cb-pay" value="CB Pay">
-    <label for="javascript">CB Pay</label>
-    <input type="text" id="cb-pay" name="cb-pay" placeholder="Enter your CBpay account">
-  
-    <input type="submit" value="Submit"><button class="btn"> <a href="../index.html" class="text-btn"> Back to Home</button>
-    
-  </form>
+<label class="container">AYA Mobile Banking
+  <input type="radio" checked="checked" name="radio">
+  <span class="checkmark"></span>
+</label>
+  <input type="text" id="name" name="aya" placeholder="Enter AYA Bank Account">
+<label class="container">KBZ Mobile Banking
+  <input type="radio" name="radio">
+  <span class="checkmark"></span>
+</label>
+  <input type="text" id="name" name="kbz" placeholder="Enter KBZ Bank Account">
+<label class="container">Wave Money
+  <input type="radio" name="radio">
+  <span class="checkmark"></span>
+</label>
+<input type="text" id="name" name="wave" placeholder="Enter Wave Account">
+<label class="container">KBZ Pay
+  <input type="radio" name="radio">
+  <span class="checkmark"></span>
+</label>
+<input type="text" id="name" name="kpay" placeholder="Enter KBZ Pay Account">
+<button class="btn"> <a href="pay-response.html" class="text-btn">Submit</button><button class="btn"> <a href="../index.html" class="text-btn">Back to Home</button>
 </div>
-
 </body>
 </html>
